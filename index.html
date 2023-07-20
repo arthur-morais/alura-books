@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraBooks</title>
+    <link rel="stylesheet" href="./reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./reset.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./styles/banner.css">
 </head>
 <body>
     
@@ -58,8 +61,79 @@
         <input type="search" name="" id="busca" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
 
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">
+            Últimos lançamentos
+        </h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./assets/livro-apache.png" alt="livro sobre apache"></div>
+
+            <div class="swiper-slide"><img src="./assets/livro-frontend.png" alt="livro sobre frontend"></div>
+
+            <div class="swiper-slide"><img src="./assets/livro-javascript.png" alt="livro sobre frontend"></div>
+
+            <div class="swiper-slide"><img src="./assets/livro-lideranca.png" alt="livro sobre liderança"></div>
+
+            <div class="swiper-slide"><img src="./assets/livro-portugol.png" alt="livro sobre portugol"></div>
+
+            <div class="swiper-slide"><img src="./assets/livro-node.png" alt="livro sobre livro-node"></div>
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+        </div>
+    </section> 
+
+    <section class="angular">
+        <div class="angular__descricao">
+            <h3 class="angular__descricao-subtitulo">
+                Talvez você também se interesse por...
+            </h3>
+
+            <h2 class="angular__descricao-titulo">
+                Angular 11 e Firebase
+            </h2>
+
+            <p class="angular__descricao-texto">
+                Construindo uma aplicação integrada com a plataforma do Google.
+            </p>
+
+            <img src="./assets/Favoritos-2.svg" alt="ícone de favoritos">
+            <img src="./assets/Sacola-2.svg" alt="ícone de compras">
+        </div>
+
+        <div class="angular__saiba-mais">
+            <img src="./assets/Angular.png" alt="imagem do framework Angular">
+            <a href="#" class="angular__saiba-mais-botao">Saiba mais</a>
+        </div>
+    </section>
+
     <footer>
 
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 40,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+    });
+    </script>
 </body>
 </html>
