@@ -1,0 +1,56 @@
+.angular {
+    background-color: var(--branco);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    /* margin: 1.25rem 1.5rem; */
+}
+
+.angular__descricao {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 0.5rem;
+}
+
+.angular__descricao-subtitulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.angular__descricao-titulo {
+    color: var(--azul-escuro);
+
+    font-size: 1.125rem;
+    font-weight: 700;
+
+    margin: 0.5rem 0;
+}
+
+.angular__descricao-texto {
+    color: var(--preto);
+    
+    font-size: 0.875rem;
+}
+
+.angular__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+    gap: 1rem;
+}
+
+.saiba-mais {
+    color: var(--branco);
+    background-color: var(--laranja);
+
+    text-decoration: none;
+    font-weight: 700;
+
+    padding: 1rem 2.2rem;
+}
