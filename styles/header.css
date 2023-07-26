@@ -62,3 +62,25 @@
 
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 428px) {
+    .cabecalho__titulo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .cabecalho__titulo {
+        color: var(--preto);
+        font-size: 1.875rem;
+        font-family: var("Josefin Sans");
+    }
+
+    .titulo__span {
+        font-weight: 700;
+    }
+}
