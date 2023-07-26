@@ -1,0 +1,50 @@
+.novidades {
+    background-color: var(--branco);
+
+    text-align: left;
+    
+    padding: 1.5rem;
+}
+
+.novidades__titulo {
+    font-size: 1.125rem;
+    font-weight: 500; 
+
+    background: var(--teste, linear-gradient(160deg, #002F52 0%, #326589 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.novidades__texto {
+    font-weight: 300;
+
+    background: var(--teste, linear-gradient(160deg, #002F52 0%, #326589 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.novidades__cadastro-email {
+    border: 1px solid var(--azul-escuro);
+    border-radius: 1.5rem;
+
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    box-sizing: border-box;
+
+    color: var(--azul-escuro);
+}
+
+.novidades__cadastro-email::placeholder {
+    background: url(../assets/Email.svg) no-repeat;
+    background-position: 0.1rem;
+    padding-left: 2.5rem;
+
+    color: var(--azul-escuro);
+
+    font-family: var(--fonte-principal);
+    font-size: 0.875rem;
+}
