@@ -18,6 +18,10 @@
     position: relative;
 }
 
+.cabecalho__titulo {
+    display: none;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -63,10 +67,8 @@
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 428px) {
-    .cabecalho__titulo {
-        display: none;
-    }
+.opcoes {
+    display: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -78,9 +80,34 @@
         color: var(--preto);
         font-size: 1.875rem;
         font-family: var("Josefin Sans");
+        display: block;
     }
 
     .titulo__span {
         font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 0 1rem;
+
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        color: var(--preto);
+
+        text-decoration: none;
+    }
+
+    .container__imagem-transparente {
+        display: none;
+    }
+
+    .cabecalho {
+        justify-content: space-around;
     }
 }

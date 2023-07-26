@@ -24,7 +24,6 @@
 
 .banner__pesquisa {
     padding: 1rem;
-    width: 100%;
 
     border-radius: 1.5rem;
     border: 1px solid var(--branco);
@@ -42,4 +41,14 @@
 
     background: url(../assets/Pesquisa.svg) no-repeat;
     background-position: .1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner__pesquisa {
+        margin: 0 16rem;
+    }
+
+    .banner {
+        padding: 5rem 4rem;
+    }
 }
