@@ -110,4 +110,13 @@
     .cabecalho {
         justify-content: space-around;
     }
+
+    .opcoes__botao:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
 }
